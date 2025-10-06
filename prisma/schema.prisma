@@ -65,7 +65,7 @@ model Appointment {
 
 	// Relationships
 	user      User @relation(fields: [userId], references: [id], onDelete: Cascade)
-	doctor    Doctor @relation(fields: [doctorId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+	doctor    Doctor @relation(fields: [doctorId], references: [id], onDelete: Cascade)
 
 	@@map("appointments")
 }

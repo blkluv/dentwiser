@@ -198,7 +198,10 @@ const AppointmentsPage = () => {
                                 <div className="flex items-center gap-3 mb-3">
                                     <div className="size-10 bg-primary/10 rounded-full flex items-center justify-center">
                                         <img
-                                            src={appointment.doctorImageUrl}
+                                            src={
+                                                appointment.doctorImageUrl ||
+                                                "/placeholder.jpg"
+                                            }
                                             alt={appointment.doctorName}
                                             className="size-10 rounded-full"
                                         />

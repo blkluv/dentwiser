@@ -43,6 +43,7 @@ export function useUpdateDoctor() {
         onSuccess: () => {
             // Invalidate the latest queries to refetch the data
             queryClient.invalidateQueries({ queryKey: ["getDoctors"] });
+            queryClient.invalidateQueries({ queryKey: ["getAvailableDoctors"] });
         },
         onError: (error) => {
             console.error("Error updating doctor:", error);

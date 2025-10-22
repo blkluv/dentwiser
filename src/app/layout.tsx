@@ -45,7 +45,7 @@ export default function RootLayout({
                         className={`${geistSans.variable} ${geistMono.variable} antialiased dark`}
                     >
                         <Toaster richColors />
-                        <UserSync />
+                        {/* <UserSync /> */}
                         {children}
                     </body>
                 </html>

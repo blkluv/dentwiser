@@ -5,23 +5,23 @@ import { useUser } from "@clerk/nextjs";
 import { useEffect } from "react";
 
 const UserSync = () => {
-    const { isSignedIn, isLoaded } = useUser();
+  const { isSignedIn, isLoaded } = useUser();
 
-    useEffect(() => {
-        const handleSyncUser = async () => {
-            if (isLoaded && isSignedIn) {
-                try {
-                    await syncUser();
-                } catch (error) {
-                    console.error("Failed to sync user:", error);
-                }
-            }
-        };
+  useEffect(() => {
+    const handleSyncUser = async () => {
+      if (isLoaded && isSignedIn) {
+        try {
+          await syncUser();
+        } catch (error) {
+          console.error("Failed to sync user:", error);
+        }
+      }
+    };
 
-        handleSyncUser();
-    }, [isLoaded, isSignedIn]);
+    handleSyncUser();
+  }, [isLoaded, isSignedIn]);
 
-    return null;
+  return null;
 };
 
 export default UserSync;

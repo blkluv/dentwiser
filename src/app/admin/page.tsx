@@ -3,18 +3,18 @@ import { redirect } from "next/navigation";
 import AdminDashboardClient from "./AdminDashboardClient";
 
 const AdminPage = async () => {
-    const user = await currentUser();
+  const user = await currentUser();
 
-    // If user is not logged in
-    if (!user) redirect("/");
+  // If user is not logged in
+  if (!user) redirect("/");
 
-    const adminEmail = process.env.ADMIN_EMAIL;
-    const userEmail = user.emailAddresses[0]?.emailAddress;
+  const adminEmail = process.env.ADMIN_EMAIL;
+  const userEmail = user.emailAddresses[0]?.emailAddress;
 
-    // User is not the admin
-    if (!adminEmail || userEmail !== adminEmail) redirect("/dashboard");
+  // User is not the admin
+  if (!adminEmail || userEmail !== adminEmail) redirect("/dashboard");
 
-    return <AdminDashboardClient />;
+  return <AdminDashboardClient />;
 };
 
 export default AdminPage;

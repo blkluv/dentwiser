@@ -8,6 +8,12 @@
   </p>
   
   <p align="center">
+    <a href="https://dentwise-ai-dental-assistan-p3h1i.sevalla.app" target="_blank">
+      <img src="https://img.shields.io/badge/🚀_Live_Demo-Visit_App-00D9FF?style=for-the-badge&logoColor=white" alt="Live Demo" />
+    </a>
+  </p>
+  
+  <p align="center">
     <img src="https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js" alt="Next.js" />
     <img src="https://img.shields.io/badge/TypeScript-5-blue?style=for-the-badge&logo=typescript" alt="TypeScript" />
     <img src="https://img.shields.io/badge/Tailwind-CSS-38B2AC?style=for-the-badge&logo=tailwind-css" alt="Tailwind CSS" />
